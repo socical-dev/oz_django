@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from day2.todo.views import todo_list, todo_info
-from day3.users import views as users_views
+from todo.views import todo_list, todo_info
+from users import views as users_views
 
 urlpatterns = [
     path('todo/', todo_list, name='todo_list'),

@@ -40,6 +40,7 @@ DJANGO_APPS = [
 
 OWN_APPS = [
     'users', # users 앱을 추가
+    'todo', # todo 앱을 추가
 ]
 
 INSTALLED_APPS = DJANGO_APPS + OWN_APPS
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
